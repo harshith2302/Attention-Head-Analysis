@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+cache/
+logs/
+exp1/results/
+exp1/results_test/
+exp1/datasets/
+exp1/model/
+*.npy
+*.arrow
+*.pth
+*.safetensors
+*.png
+
