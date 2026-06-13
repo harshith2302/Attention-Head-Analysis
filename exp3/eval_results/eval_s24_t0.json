@@ -1,0 +1,92 @@
+{
+  "config": {
+    "strategy": "A",
+    "n_shared": 24,
+    "m_task": 0,
+    "free_layers": 0,
+    "heads_per_masked_layer": 24,
+    "tag": "s24_t0",
+    "timestamp": "2026-05-05T05:33:25.303126"
+  },
+  "per_task": {
+    "mmlu": {
+      "score": 25.32,
+      "moh": 65.8,
+      "full": 65.2,
+      "vs_moh": -40.48,
+      "vs_full": -39.88
+    },
+    "hellaswag": {
+      "error": "must be called with a dataclass type or instance"
+    },
+    "arc_challenge": {
+      "error": "must be called with a dataclass type or instance"
+    },
+    "boolq": {
+      "score": 48.07,
+      "moh": 84.0,
+      "full": 83.9,
+      "vs_moh": -35.93,
+      "vs_full": -35.83
+    },
+    "piqa": {
+      "score": 59.25,
+      "moh": 78.8,
+      "full": 81.0,
+      "vs_moh": -19.55,
+      "vs_full": -21.75
+    },
+    "winogrande": {
+      "score": 51.85,
+      "moh": 72.9,
+      "full": 72.5,
+      "vs_moh": -21.05,
+      "vs_full": -20.65
+    },
+    "lambada": {
+      "score": 0.14,
+      "moh": 76.4,
+      "full": 75.5,
+      "vs_moh": -76.26,
+      "vs_full": -75.36
+    },
+    "sciq": {
+      "score": 37.9,
+      "moh": 92.2,
+      "full": 94.0,
+      "vs_moh": -54.3,
+      "vs_full": -56.1
+    },
+    "truthfulqa": {
+      "error": "must be called with a dataclass type or instance"
+    },
+    "logiqa": {
+      "score": 24.73,
+      "moh": 30.3,
+      "full": 30.0,
+      "vs_moh": -5.57,
+      "vs_full": -5.27
+    },
+    "gsm8k": {
+      "score": 0.0,
+      "moh": 56.9,
+      "full": 49.5,
+      "vs_moh": -56.9,
+      "vs_full": -49.5
+    },
+    "natural_questions": {
+      "score": 0.08,
+      "moh": 28.3,
+      "full": 31.5,
+      "vs_moh": -28.22,
+      "vs_full": -31.42
+    }
+  },
+  "summary": {
+    "our_avg": 27.48,
+    "moh_avg": 65.07,
+    "full_avg": 64.79,
+    "tasks_evaluated": 9,
+    "wins_vs_moh": 0
+  }
+}

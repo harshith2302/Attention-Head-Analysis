@@ -1,0 +1,169 @@
+Collecting lm-eval
+  Downloading lm_eval-0.4.11-py3-none-any.whl.metadata (56 kB)
+Collecting scipy
+  Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Requirement already satisfied: numpy in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (2.2.6)
+Requirement already satisfied: datasets>=2.16.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from lm-eval) (2.20.0)
+Collecting evaluate>=0.4.0 (from lm-eval)
+  Downloading evaluate-0.4.6-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: jinja2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from lm-eval) (3.1.6)
+Collecting jsonlines (from lm-eval)
+  Using cached jsonlines-4.0.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting pytablewriter (from lm-eval)
+  Downloading pytablewriter-1.2.1-py3-none-any.whl.metadata (38 kB)
+Collecting rouge-score>=0.0.4 (from lm-eval)
+  Using cached rouge_score-0.1.2.tar.gz (17 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting sacrebleu>=1.5.0 (from lm-eval)
+  Using cached sacrebleu-2.6.0-py3-none-any.whl.metadata (39 kB)
+Collecting scikit-learn>=0.24.1 (from lm-eval)
+  Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting sqlitedict (from lm-eval)
+  Downloading sqlitedict-2.1.0.tar.gz (21 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting zstandard (from lm-eval)
+  Downloading zstandard-0.25.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.3 kB)
+Requirement already satisfied: dill in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from lm-eval) (0.3.8)
+Collecting word2number (from lm-eval)
+  Downloading word2number-1.1.zip (9.7 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting more_itertools (from lm-eval)
+  Downloading more_itertools-11.0.2-py3-none-any.whl.metadata (41 kB)
+Requirement already satisfied: typing_extensions in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from lm-eval) (4.15.0)
+Requirement already satisfied: filelock in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (3.25.2)
+Requirement already satisfied: pyarrow>=15.0.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (24.0.0)
+Requirement already satisfied: pyarrow-hotfix in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (0.7)
+Requirement already satisfied: pandas in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (2.3.3)
+Requirement already satisfied: requests>=2.32.2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (2.33.1)
+Requirement already satisfied: tqdm>=4.66.3 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (4.67.3)
+Requirement already satisfied: xxhash in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (3.7.0)
+Requirement already satisfied: multiprocess in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (0.70.16)
+Requirement already satisfied: fsspec<=2024.5.0,>=2023.1.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from fsspec[http]<=2024.5.0,>=2023.1.0->datasets>=2.16.0->lm-eval) (2024.5.0)
+Requirement already satisfied: aiohttp in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (3.13.5)
+Requirement already satisfied: huggingface-hub>=0.21.2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (1.13.0)
+Requirement already satisfied: packaging in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (26.0)
+Requirement already satisfied: pyyaml>=5.1 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from datasets>=2.16.0->lm-eval) (6.0.3)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (1.4.0)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (5.0.1)
+Requirement already satisfied: attrs>=17.3.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from aiohttp->datasets>=2.16.0->lm-eval) (1.23.0)
+Requirement already satisfied: idna>=2.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from yarl<2.0,>=1.17.0->aiohttp->datasets>=2.16.0->lm-eval) (3.13)
+Requirement already satisfied: hf-xet<2.0.0,>=1.4.3 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (1.4.3)
+Requirement already satisfied: httpx<1,>=0.23.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (0.28.1)
+Requirement already satisfied: typer in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (0.25.1)
+Requirement already satisfied: anyio in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (4.13.0)
+Requirement already satisfied: certifi in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (2026.4.22)
+Requirement already satisfied: httpcore==1.* in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (0.16.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from requests>=2.32.2->datasets>=2.16.0->lm-eval) (3.4.7)
+Requirement already satisfied: urllib3<3,>=1.26 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from requests>=2.32.2->datasets>=2.16.0->lm-eval) (2.6.3)
+Collecting absl-py (from rouge-score>=0.0.4->lm-eval)
+  Using cached absl_py-2.4.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting nltk (from rouge-score>=0.0.4->lm-eval)
+  Using cached nltk-3.9.4-py3-none-any.whl.metadata (3.2 kB)
+Requirement already satisfied: six>=1.14.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from rouge-score>=0.0.4->lm-eval) (1.17.0)
+Collecting portalocker (from sacrebleu>=1.5.0->lm-eval)
+  Using cached portalocker-3.2.0-py3-none-any.whl.metadata (8.7 kB)
+Requirement already satisfied: regex in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from sacrebleu>=1.5.0->lm-eval) (2026.4.4)
+Collecting tabulate>=0.8.9 (from sacrebleu>=1.5.0->lm-eval)
+  Using cached tabulate-0.10.0-py3-none-any.whl.metadata (40 kB)
+Collecting colorama (from sacrebleu>=1.5.0->lm-eval)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting lxml (from sacrebleu>=1.5.0->lm-eval)
+  Downloading lxml-6.1.0-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (4.0 kB)
+Collecting joblib>=1.2.0 (from scikit-learn>=0.24.1->lm-eval)
+  Using cached joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn>=0.24.1->lm-eval)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: exceptiongroup>=1.0.2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from anyio->httpx<1,>=0.23.0->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from jinja2->lm-eval) (3.0.3)
+Requirement already satisfied: click in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from nltk->rouge-score>=0.0.4->lm-eval) (8.3.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from pandas->datasets>=2.16.0->lm-eval) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from pandas->datasets>=2.16.0->lm-eval) (2026.2)
+Requirement already satisfied: tzdata>=2022.7 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from pandas->datasets>=2.16.0->lm-eval) (2026.2)
+Requirement already satisfied: setuptools>=38.3.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from pytablewriter->lm-eval) (82.0.1)
+Collecting DataProperty<2,>=1.1.0 (from pytablewriter->lm-eval)
+  Downloading DataProperty-1.1.0-py3-none-any.whl.metadata (11 kB)
+Collecting mbstrdecoder<2,>=1.0.0 (from pytablewriter->lm-eval)
+  Downloading mbstrdecoder-1.1.4-py3-none-any.whl.metadata (4.3 kB)
+Collecting pathvalidate<4,>=2.3.0 (from pytablewriter->lm-eval)
+  Downloading pathvalidate-3.3.1-py3-none-any.whl.metadata (12 kB)
+Collecting tabledata<2,>=1.3.1 (from pytablewriter->lm-eval)
+  Downloading tabledata-1.3.4-py3-none-any.whl.metadata (3.7 kB)
+Collecting tcolorpy<1,>=0.0.5 (from pytablewriter->lm-eval)
+  Downloading tcolorpy-0.1.7-py3-none-any.whl.metadata (6.3 kB)
+Collecting typepy<2,>=1.3.2 (from typepy[datetime]<2,>=1.3.2->pytablewriter->lm-eval)
+  Downloading typepy-1.3.5-py3-none-any.whl.metadata (9.6 kB)
+Collecting chardet<6,>=3.0.4 (from mbstrdecoder<2,>=1.0.0->pytablewriter->lm-eval)
+  Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: shellingham>=1.3.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from typer->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (1.5.4)
+Requirement already satisfied: rich>=13.8.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from typer->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (15.0.0)
+Requirement already satisfied: annotated-doc>=0.0.2 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from typer->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (0.0.4)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from rich>=13.8.0->typer->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from rich>=13.8.0->typer->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (2.20.0)
+Requirement already satisfied: mdurl~=0.1 in /home/priya/miniconda3/envs/moh/lib/python3.10/site-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->huggingface-hub>=0.21.2->datasets>=2.16.0->lm-eval) (0.1.2)
+Downloading lm_eval-0.4.11-py3-none-any.whl (8.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 31.8 MB/s  0:00:00
+Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 53.3 MB/s  0:00:00
+Downloading evaluate-0.4.6-py3-none-any.whl (84 kB)
+Using cached sacrebleu-2.6.0-py3-none-any.whl (100 kB)
+Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 40.3 MB/s  0:00:00
+Using cached joblib-1.5.3-py3-none-any.whl (309 kB)
+Using cached tabulate-0.10.0-py3-none-any.whl (39 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Using cached absl_py-2.4.0-py3-none-any.whl (135 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached jsonlines-4.0.0-py3-none-any.whl (8.7 kB)
+Downloading lxml-6.1.0-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 28.3 MB/s  0:00:00
+Downloading more_itertools-11.0.2-py3-none-any.whl (71 kB)
+Using cached nltk-3.9.4-py3-none-any.whl (1.6 MB)
+Using cached portalocker-3.2.0-py3-none-any.whl (22 kB)
+Downloading pytablewriter-1.2.1-py3-none-any.whl (91 kB)
+Downloading DataProperty-1.1.0-py3-none-any.whl (27 kB)
+Downloading mbstrdecoder-1.1.4-py3-none-any.whl (7.9 kB)
+Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+Downloading pathvalidate-3.3.1-py3-none-any.whl (24 kB)
+Downloading tabledata-1.3.4-py3-none-any.whl (11 kB)
+Downloading tcolorpy-0.1.7-py3-none-any.whl (8.1 kB)
+Downloading typepy-1.3.5-py3-none-any.whl (31 kB)
+Downloading zstandard-0.25.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 33.5 MB/s  0:00:00
+Building wheels for collected packages: rouge-score, sqlitedict, word2number
+  Building wheel for rouge-score (pyproject.toml): started
+  Building wheel for rouge-score (pyproject.toml): finished with status 'done'
+  Created wheel for rouge-score: filename=rouge_score-0.1.2-py3-none-any.whl size=24988 sha256=8ac4c5b16599b6d4fb0aedfbd790f2a1d5554923ee8a8c1259d210d3f80adade
+  Stored in directory: /home/priya/.cache/pip/wheels/5f/dd/89/461065a73be61a532ff8599a28e9beef17985c9e9c31e541b4
+  Building wheel for sqlitedict (pyproject.toml): started
+  Building wheel for sqlitedict (pyproject.toml): finished with status 'done'
+  Created wheel for sqlitedict: filename=sqlitedict-2.1.0-py3-none-any.whl size=16955 sha256=db8279204a2945b6bc0724d93e3de273015201f0ca9e73f9fc2f1279aabaebe0
+  Stored in directory: /home/priya/.cache/pip/wheels/79/d6/e7/304e0e6cb2221022c26d8161f7c23cd4f259a9e41e8bbcfabd
+  Building wheel for word2number (pyproject.toml): started
+  Building wheel for word2number (pyproject.toml): finished with status 'done'
+  Created wheel for word2number: filename=word2number-1.1-py3-none-any.whl size=5659 sha256=331975ccb7522a6b20c49d1c3e784486c2b7456c4d0569d63345911aa5793ac7
+  Stored in directory: /home/priya/.cache/pip/wheels/84/ff/26/d3cfbd971e96c5aa3737ecfced81628830d7359b55fbb8ca3b
+Successfully built rouge-score sqlitedict word2number
+Installing collected packages: word2number, sqlitedict, zstandard, threadpoolctl, tcolorpy, tabulate, scipy, portalocker, pathvalidate, more_itertools, lxml, jsonlines, joblib, colorama, chardet, absl-py, scikit-learn, sacrebleu, nltk, mbstrdecoder, typepy, rouge-score, DataProperty, tabledata, evaluate, pytablewriter, lm-eval
+
+Successfully installed DataProperty-1.1.0 absl-py-2.4.0 chardet-5.2.0 colorama-0.4.6 evaluate-0.4.6 joblib-1.5.3 jsonlines-4.0.0 lm-eval-0.4.11 lxml-6.1.0 mbstrdecoder-1.1.4 more_itertools-11.0.2 nltk-3.9.4 pathvalidate-3.3.1 portalocker-3.2.0 pytablewriter-1.2.1 rouge-score-0.1.2 sacrebleu-2.6.0 scikit-learn-1.7.2 scipy-1.15.3 sqlitedict-2.1.0 tabledata-1.3.4 tabulate-0.10.0 tcolorpy-0.1.7 threadpoolctl-3.6.0 typepy-1.3.5 word2number-1.1 zstandard-0.25.0

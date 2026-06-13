@@ -1,0 +1,87 @@
+{
+  "config": {
+    "strategy": "A",
+    "n_shared": 8,
+    "m_task": 14,
+    "free_layers": 0,
+    "heads_per_masked_layer": 22,
+    "tag": "s8_t14",
+    "timestamp": "2026-05-08T17:43:47.332588"
+  },
+  "per_task": {
+    "mmlu": {
+      "error": "HfHubHTTPError: Server error '500 Internal Server Error' for url 'https://huggingface.co/api/datasets/cais/mmlu/tree/c30699e8356da336a370243923dbaf21066bb9fe/public_relations?recursive=true&expand=false' (Request ID:"
+    },
+    "hellaswag": {
+      "error": "TypeError: must be called with a dataclass type or instance"
+    },
+    "arc_challenge": {
+      "error": "TypeError: must be called with a dataclass type or instance"
+    },
+    "boolq": {
+      "score": 61.5,
+      "moh": 84.0,
+      "full": 83.9,
+      "vs_moh": -22.5,
+      "vs_full": -22.4
+    },
+    "piqa": {
+      "score": 61.97,
+      "moh": 78.8,
+      "full": 81.0,
+      "vs_moh": -16.83,
+      "vs_full": -19.03
+    },
+    "winogrande": {
+      "score": 51.22,
+      "moh": 72.9,
+      "full": 72.5,
+      "vs_moh": -21.68,
+      "vs_full": -21.28
+    },
+    "lambada": {
+      "score": 4.41,
+      "moh": 76.4,
+      "full": 75.5,
+      "vs_moh": -71.99,
+      "vs_full": -71.09
+    },
+    "sciq": {
+      "score": 33.6,
+      "moh": 92.2,
+      "full": 94.0,
+      "vs_moh": -58.6,
+      "vs_full": -60.4
+    },
+    "truthfulqa": {
+      "error": "TypeError: must be called with a dataclass type or instance"
+    },
+    "logiqa": {
+      "score": 23.96,
+      "moh": 30.3,
+      "full": 30.0,
+      "vs_moh": -6.34,
+      "vs_full": -6.04
+    },
+    "gsm8k": {
+      "score": 0.0,
+      "moh": 56.9,
+      "full": 49.5,
+      "vs_moh": -56.9,
+      "vs_full": -49.5
+    },
+    "natural_questions": {
+      "error": "metric extraction failed",
+      "raw_keys": [
+        "nq_open"
+      ]
+    }
+  },
+  "summary": {
+    "our_avg": 33.81,
+    "moh_avg": 70.21,
+    "full_avg": 69.49,
+    "tasks_evaluated": 7,
+    "wins_vs_moh": 0
+  }
+}

@@ -1,0 +1,20 @@
+# Large folders
+model/
+datasets/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model files
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# Ignore everything inside results
+results/*
+
+# Except this file
+!results/global_ranking.csv

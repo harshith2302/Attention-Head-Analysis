@@ -1,0 +1,87 @@
+{
+  "config": {
+    "strategy": "A",
+    "n_shared": 8,
+    "m_task": 12,
+    "free_layers": 0,
+    "heads_per_masked_layer": 20,
+    "tag": "s8_t12",
+    "timestamp": "2026-05-08T12:54:23.008929"
+  },
+  "per_task": {
+    "mmlu": {
+      "error": "HfHubHTTPError: Server error '500 Internal Server Error' for url 'https://huggingface.co/api/datasets/cais/mmlu/tree/c30699e8356da336a370243923dbaf21066bb9fe/marketing?recursive=true&expand=false' (Request ID: Root=1"
+    },
+    "hellaswag": {
+      "error": "TypeError: must be called with a dataclass type or instance"
+    },
+    "arc_challenge": {
+      "error": "TypeError: must be called with a dataclass type or instance"
+    },
+    "boolq": {
+      "score": 61.41,
+      "moh": 84.0,
+      "full": 83.9,
+      "vs_moh": -22.59,
+      "vs_full": -22.49
+    },
+    "piqa": {
+      "score": 58.22,
+      "moh": 78.8,
+      "full": 81.0,
+      "vs_moh": -20.58,
+      "vs_full": -22.78
+    },
+    "winogrande": {
+      "score": 52.96,
+      "moh": 72.9,
+      "full": 72.5,
+      "vs_moh": -19.94,
+      "vs_full": -19.54
+    },
+    "lambada": {
+      "score": 3.01,
+      "moh": 76.4,
+      "full": 75.5,
+      "vs_moh": -73.39,
+      "vs_full": -72.49
+    },
+    "sciq": {
+      "score": 41.8,
+      "moh": 92.2,
+      "full": 94.0,
+      "vs_moh": -50.4,
+      "vs_full": -52.2
+    },
+    "truthfulqa": {
+      "error": "TypeError: must be called with a dataclass type or instance"
+    },
+    "logiqa": {
+      "score": 23.81,
+      "moh": 30.3,
+      "full": 30.0,
+      "vs_moh": -6.49,
+      "vs_full": -6.19
+    },
+    "gsm8k": {
+      "score": 0.0,
+      "moh": 56.9,
+      "full": 49.5,
+      "vs_moh": -56.9,
+      "vs_full": -49.5
+    },
+    "natural_questions": {
+      "error": "metric extraction failed",
+      "raw_keys": [
+        "nq_open"
+      ]
+    }
+  },
+  "summary": {
+    "our_avg": 34.46,
+    "moh_avg": 70.21,
+    "full_avg": 69.49,
+    "tasks_evaluated": 7,
+    "wins_vs_moh": 0
+  }
+}
