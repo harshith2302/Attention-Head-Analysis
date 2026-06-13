@@ -539,6 +539,32 @@ def run_analysis(
             for layer, head in heads:
                 writer.writerow([layer, head])
 
+    # Save per-task head rankings as CSVs
+    per_task_importance = aggregator.get_per_task_importance()
+    task_rankings_dir = os.path.join(output_dir, "task_rankings")
+    os.makedirs(task_rankings_dir, exist_ok=True)
+    print(f"\n  Saving per-task rankings for {len(per_task_importance)} tasks...")
+    for task_name, task_imp in per_task_importance.items():
+        # Sort all 1024 heads by this task's importance
+        task_ranking = []
+        for l in range(num_layers):
+            for h in range(num_heads):
+                task_ranking.append((l, h, task_imp[l, h]))
+        task_ranking.sort(key=lambda x: x[2], reverse=True)
+
+        csv_path = os.path.join(task_rankings_dir, f"task_ranking_{task_name}.csv")
+        with open(csv_path, "w", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(["rank", "layer_idx", "head_idx", "importance_score"])
+            for rank_i, (l, h, sc) in enumerate(task_ranking, 1):
+                writer.writerow([rank_i, l, h, f"{sc:.6f}"])
+
+        # Also save raw npy
+        np.save(os.path.join(task_rankings_dir, f"task_importance_{task_name}.npy"), task_imp)
+        print(f"    {task_name}: top head = L{task_ranking[0][0]}H{task_ranking[0][1]} ({task_ranking[0][2]:.4f})")
+
+    print(f"  Per-task rankings saved to {task_rankings_dir}/")
+
     # Save analysis report
     elapsed = time.time() - start_time
     report = generate_analysis_report(
@@ -576,7 +602,7 @@ def run_analysis(
         ranking=ranking,
         stats=stats,
         shared_heads_50=shared_50,
-        per_task_importance=aggregator.get_per_task_importance(),
+        per_task_importance=per_task_importance,
         output_dir=output_dir,
         num_layers=num_layers,
         num_heads=num_heads,
